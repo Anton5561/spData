@@ -15,8 +15,8 @@ public class FoxyJ {
 //         this.lemon = lemon;
 //      }
 
-       public String getRealName(){
-         System.out.println("1111111111");
+    public String getRealName() {
+        System.out.println("1111111111");
         return "Настоящее имя:" + lemon.getColour();
     }
 }
