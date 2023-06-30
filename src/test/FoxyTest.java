@@ -9,6 +9,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.Spy;
 import org.mockito.junit.jupiter.*;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.util.Assert;
 
 import ru.denis.all.exeption.SpringExeption;
@@ -16,7 +17,7 @@ import ru.denis.all.fox.FoxyJ;
 import ru.denis.all.fox.Lemon;
 
 @ExtendWith({MockitoExtension.class})
-//@ExtendWith(SpringExeption.class)
+@ExtendWith(SpringExtension.class)
 //@ContextConfiguration()
 
 public class FoxyTest {
