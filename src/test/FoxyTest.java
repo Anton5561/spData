@@ -12,23 +12,28 @@ import org.mockito.junit.jupiter.*;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.util.Assert;
 
+import ru.denis.all.controller.LogSt;
 import ru.denis.all.exeption.SpringExeption;
 import ru.denis.all.fox.FoxyJ;
 import ru.denis.all.fox.Lemon;
 
 @ExtendWith({MockitoExtension.class})
-@ExtendWith(SpringExtension.class)
+//@ExtendWith(SpringExtension.class)
 //@ContextConfiguration()
 
 public class FoxyTest {
 
-    @Spy
+
+
+        @Spy
     private Lemon lemon = new Lemon();
-
-
-
     @InjectMocks
     private FoxyJ foxyJ;
+
+//    @Spy
+//    private Lemon lemon = new Lemon();
+    //@InjectMocks
+//    private FoxyJ foxyJ;
 
     @Test
     public void testFoxy1() {
